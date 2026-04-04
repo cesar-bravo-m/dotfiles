@@ -7,13 +7,16 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'preservim/nerdtree'
+Plugin 'cesar-bravo-m/ctrlp.vim', {'pinned': 1}
+Plugin 'cesar-bravo-m/nerdtree'
+Plugin 'rishi-opensource/vim-claude-code'
+Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plugin 'junegunn/fzf.vim'
 
 call vundle#end()
 filetype plugin indent on
 
-let g:ctrlp_use_caching=0
+let g:ctrlp_use_cachng=0
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|env\|bin\|lib'
 let g:last_relative_dir = ''
 
@@ -28,3 +31,6 @@ let &t_SR = "\<Esc>[4 q"
 let &t_EI = "\<Esc>[2 q"
 set visualbell
 set t_vb=
+
+colorscheme slate
+set wildignore+=obj/**,node_modules/**,.git/**,*/node_modules/**
