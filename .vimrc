@@ -7,11 +7,11 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-Plugin 'cesar-bravo-m/ctrlp.vim', {'pinned': 1}
+Plugin 'cesar-bravo-m/ctrlp.vim'
 Plugin 'cesar-bravo-m/nerdtree'
 Plugin 'rishi-opensource/vim-claude-code'
 Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plugin 'junegunn/fzf.vim'
+Plugin 'cesar-bravo-m/fzf.vim'
 
 call vundle#end()
 filetype plugin indent on
