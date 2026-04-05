@@ -33,3 +33,8 @@ set t_vb=
 
 colorscheme slate
 set wildignore+=obj/**,node_modules/**,.git/**,*/node_modules/**
+
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
