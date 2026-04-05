@@ -9,7 +9,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'cesar-bravo-m/ctrlp.vim'
 Plugin 'cesar-bravo-m/nerdtree'
-Plugin 'rishi-opensource/vim-claude-code'
 Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plugin 'cesar-bravo-m/fzf.vim'
 
