@@ -7,10 +7,13 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-Plugin 'cesar-bravo-m/ctrlp.vim'
+Plugin 'cesar-bravo-m/ctrlp.vim', {'pinned': 1}
 Plugin 'cesar-bravo-m/nerdtree'
 Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plugin 'cesar-bravo-m/fzf.vim'
+Plugin 'cesar-bravo-m/fzf.vim', { 'pinned': 1}
+Plugin 'HerringtonDarkholme/yats.vim'
+Plugin 'maxmellon/vim-jsx-pretty'
+Plugin 'ycm-core/youcompleteme'
 
 call vundle#end()
 filetype plugin indent on
@@ -38,3 +41,5 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
+set encoding=utf-8
+let g:python3_host_prog = 'C:/Users/cbrav/AppData/Local/Programs/Python/Python38/python.exe'
